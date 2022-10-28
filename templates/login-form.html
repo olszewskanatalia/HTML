@@ -1,12 +1,74 @@
 <!doctype html>
 <html>
- <head><title>Strona logowania</title></head>
 
- <body>
-  <form action="/authenticate" method="post">
-    <input name="username" type="text"     value="" />
-    <input name="password" type="password" value="" />
-    <input name="submit"   type="submit"   value="zaloguj"/>
-  </form>
- </body>
+<head>
+  <title>Strona logowania</title>
+</head>
+
+<style>
+  header {
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #696969;
+  margin-top: 60px;
+}
+
+body {
+  background-color: #030506ff;
+}
+
+#login_panel {
+  margin: auto;
+  color: #696969;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 20px;
+  max-width: 200px;
+  padding-top: 20px;
+  max-height: 100px;
+}
+
+#login {
+  margin: auto;
+  color: #696969;
+  max-width: 200px;
+  background-color: #015D5Dff;
+  max-height: 200px;
+  padding: 50px;
+  margin-top: 100px;
+  border: 2px solid #006E8Eff;
+}
+
+input {
+  max-width: 150px;
+  margin: auto;
+}
+
+#logo {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+</style>
+<body>
+  <center>
+    <img id="logo" src="https://raw.githubusercontent.com/olszewskanatalia/HTML/master/resources/img/unknown.png?token=GHSAT0AAAAAAB2JBO7Y53KW5GUROUMG5JUQY23VHPQ">
+  </center>
+  <div id="login">
+    <div id="login_panel">
+      <input name="username" type="text" value="" placeholder="Username" />
+      </br>
+      <input name="password" type="password" value="" placeholder="Password" />
+      </br>
+      <input name="submit" type="submit" value="zaloguj" />
+      </br>
+    </div>
+  </div>
+
+</body>
+
 </html>
